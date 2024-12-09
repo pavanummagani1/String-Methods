@@ -21,76 +21,94 @@ console.log(str.at(33));
 
 //5. concat()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.concat(', How do you do??'));
 
 //6. indexOf()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.indexOf('a'));
+console.log(str.indexOf('a',9));
 
 //7. lastIndexOf()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.lastIndexOf('a'));
+console.log(str.lastIndexOf('a',9));
 
 //8. length()
-var str = "Hello Javascript";
-console.log(str);
+var str = "Hello World";
+console.log(str.length);
 
 //9 .padStrat
-var str = "Hello Javascript";
+var str = '5';
+str= str.padStart(5,'2');
 console.log(str);
 
 //10. padEnd
-var str = "Hello Javascript";
+var str = "5";
+str= str.padEnd(5,'2');
 console.log(str);
 
 //11. toLowerCase()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.toLowerCase());
 
 //12. toUpperCase()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.toUpperCase());
 
 //13. startsWith()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.startsWith('H'));
 
 //14. endsWith()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.endsWith('h'));
 
 //15. trim()
-var str = "Hello Javascript";
+var str = "                Hello Javascript"             ;
 console.log(str);
 
 //16 trimRight()
-var str = "Hello Javascript";
-console.log(str);
+var str = "Hello Javascript             ";
+console.log(str.trimRight());
 
 //17 trimLeft()
-var str = "Hello Javascript";
-console.log(str);
+var str = "               Hello Javascript";
+console.log(str.trimLeft());
 
 //18 trimStart()
-var str = "Hello Javascript";
-console.log(str);
+var str = "             Hello Javascript";
+console.log(str.trimStart());
 
 //19 trimEnd()
-var str = "Hello Javascript";
-console.log(str);
+var str = "Hello Javascript               ";
+console.log(str.trimEnd());
 
 //20 subString
 var str = "Hello Javascript";
-console.log(str);
+var newsubStr=str.substring(1,4);
+console.log(newsubStr);
 
 //21 substr()
 var str = "Hello Javascript";
-console.log(str);
+var newSubStr = str.substr(17,22)
+console.log(newSubStr);
 
 //22 split()
 var str = "Hello Javascript";
-console.log(str);
+console.log(str.split());
+console.log(str.split(' '));
+console.log(str.split('a'));
 
-//25 slice();
+//23 slice();
 var str = "Hello Javascript";
-console.log(str);
+var newStrr = str.slice(0,5);
+var newStrr1 = str.slice(-6,-1);
+var newStrr2 = str.slice(-6,1);
+console.log(newStrr);
+console.log(newStrr1);
+console.log(newStrr2);
+
+//24 search()
+var str = 'Hello Javascript';
+console.log(str.search('Hello'));
+console.log(str.search('Pavan'));
